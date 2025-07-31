@@ -182,7 +182,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Certification</button>
           </li>
 
           <li class="navbar-item">
@@ -209,12 +209,11 @@
 
         <section class="about-text">
           <p>
-            I am a motivated Data Science engineer with a strong passion for transforming data into meaningful insights. I enjoy exploring new challenges that push me to expand my knowledge and develop innovative solutions. I thrive in environments where creativity meets problem-solving, and I am always eager to learn and adapt to the latest technologies and trends in the field.
+Je suis un ingénieur en science des données motivé, avec une forte passion pour la transformation des données en informations pertinentes. J’aime relever de nouveaux défis qui m’incitent à élargir mes connaissances et à développer des solutions innovantes. Je m’épanouis dans des environnements où la créativité rencontre la résolution de problèmes, et je suis toujours enthousiaste à l’idée d’apprendre et de m’adapter aux dernières technologies et tendances du domaine.
           </p>
 
           <p>
-            Collaboration and communication are key aspects of my work style—I believe that great results come from working closely with diverse teams and sharing ideas openly. My goal is to contribute effectively to projects by turning complex information into clear, actionable outcomes that drive business value and support informed decision-making.
-          </p>
+La collaboration et la communication occupent une place centrale dans ma façon de travailler. Je suis convaincu que les meilleurs résultats proviennent d’un travail d’équipe ouvert et diversifié. Mon objectif est de contribuer concrètement aux projets en simplifiant des données complexes pour en tirer des solutions claires, créatrices de valeur, et utiles à la prise de décision.          </p>
         </section>
 
 
@@ -232,14 +231,14 @@
 
               <div class="service-icon-box">
                 <img src="./assets/images/deep-learning.png
-                " alt="design icon" width="40">
+                " alt="Machine & Deep Learning" width="40">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Machine & Deep Learning</h4>
 
                 <p class="service-item-text">
-                  Building predictive models and intelligent systems to solve complex problems using data-driven approaches.
+Développement de modèles prédictifs et de systèmes intelligents pour résoudre des problèmes complexes grâce à des approches basées sur les données.
                 </p>
               </div>
 
@@ -248,14 +247,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/brain.png" alt="Web development icon" width="40">
+                <img src="./assets/images/brain.png" alt="Artificial Intelligence" width="40">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Artificial Intelligence</h4>
 
                 <p class="service-item-text">
-                  Developing AI-powered applications including natural language processing and generative models to automate and enhance workflows.
+Développement d'applications basées sur l'intelligence artificielle, incluant le traitement du langage naturel et les modèles génératifs, afin d'automatiser et d'améliorer les flux de travail.
                 </p>
               </div>
 
@@ -264,14 +263,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/dashboard.png" alt="mobile app icon" width="40">
+                <img src="./assets/images/dashboard.png" alt="Data Analytics" width="40">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Data Analytics</h4>
 
                 <p class="service-item-text">
-                  Analyzing complex datasets to extract insights, identify patterns, and support data-driven decision making.
+Analyse de jeux de données complexes pour extraire des insights, identifier des schémas et soutenir la prise de décision basée sur les données.
                 </p>
               </div>
 
@@ -280,14 +279,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/cloud-service.png" alt="camera icon" width="40">
+                <img src="./assets/images/cloud-service.png" alt="Cloud & MLOps" width="40">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Cloud & MLOps</h4>
 
                 <p class="service-item-text">
-                 Managing and deploying scalable machine learning workflows using cloud platforms and automation tools.
+Gestion et déploiement de workflows d’apprentissage automatique évolutifs en utilisant des plateformes cloud et des outils d’automatisation.
                 </p>
               </div>
 
@@ -697,16 +696,20 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Deep Learning</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>NLP</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>AI & Gen AI</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
+            
 
           </ul>
 
@@ -745,170 +748,195 @@
           </div>
 
           <ul class="project-list">
+            <!-- my projects -->
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="deep learning" onclick="showProjectDetails(0)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images_me/cancer du col de l’utérus.png" alt="Deep Learning" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title"> Classification d’images du cancer du col de l’utérus</h3>
+                <p class="project-category">Deep Learning</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="machine learning" onclick="showProjectDetails(11)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images_me/pred_drug_decisiontree.png" alt="machine learning" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title"> Prédiction Médicamenteuse avec Arbre de Décision</h3>
+                <p class="project-category">Machine Learning</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="ai & gen ai" onclick="showProjectDetails(7)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images_me/pfe.png" alt="AI & Gen AI" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
+                <h3 class="project-title"> Développement d’une Plateforme Assistée par IA Générative pour Optimiser le Processus de Recrutement</h3>
+                <p class="project-category">AI & Gen AI</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
+            
+            <li class="project-item active" data-filter-item data-category="deep learning" onclick="showProjectDetails(2)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images_me/churn_pred.png" alt="Deep Learning" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
+                <h3 class="project-title"> Prédiction du Churn Client avec un Réseau de Neurones Artificiel - ANN</h3>
+                <p class="project-category">Deep Learning</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
+            
+            <li class="project-item active" data-filter-item data-category="ai & gen ai" onclick="showProjectDetails(6)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images_me/pfa.png" alt="AI & Gen AI" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
+                <h3 class="project-title"> Projet d'Analyse Émotionnelle des Appels Clients INWI avec ToumAI Analytics</h3>
+                <p class="project-category">AI & Gen AI</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="deep learning" onclick="showProjectDetails(4)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images_me/default_loan_pred.png" alt="Deep Learning" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
+                <h3 class="project-title"> Prédiction du Défaut de Remboursement avec un Modèle ANN </h3>
+                <p class="project-category">Deep Learning</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="deep learning" onclick="showProjectDetails(1)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images_me/age_pred.png" alt="Deep Learning" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title"> Prédiction d'Âge à partir d'Images avec YOLO et CNN</h3>
+                <p class="project-category">Deep Learning</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
+            
+            <li class="project-item active" data-filter-item data-category="nlp" onclick="showProjectDetails(5)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="./assets/images_me/correct_ortho_nlp.png" alt="NLP" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
+                <h3 class="project-title"> Correcteur Orthographique Basé sur les Édits de Lettres</h3>
+                <p class="project-category">NLP</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            
+            
+            <li class="project-item active" data-filter-item data-category="ai & gen ai" onclick="showProjectDetails(8)">
+              <a href="javascript:void(0)">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                  <img src="./assets/images_me/Guid_travail_chatbot1.png" alt="AI & Gen AI" loading="lazy" />
                 </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title"> Guide Intelligent du Code du Travail Marocain</h3>
+                <p class="project-category">AI & Gen AI</p>
               </a>
             </li>
+            <li class="project-item active" data-filter-item data-category="ai & gen ai" onclick="showProjectDetails(9)">
+              <a href="javascript:void(0)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images_me/chatbot_entreprise_QA.png" alt="AI & Gen AI" loading="lazy" />
+                </figure>
+                <h3 class="project-title"> Optimisation de la Relation Client par un Chatbot Intelligent propulsé par Google PaLM et LangChain</h3>
+                <p class="project-category">AI & Gen AI</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="machine learning" onclick="showProjectDetails(10)">
+              <a href="javascript:void(0)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images_me/segmentation_cust.png" alt="machine learning" loading="lazy" />
+                </figure>
+                <h3 class="project-title"> Segmentation Comportementale des Clients e-Commerce par Clustering K-Means</h3>
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="machine learning" onclick="showProjectDetails(12)">
+              <a href="javascript:void(0)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images_me/pred_emission_gaz.png" alt="machine learning" loading="lazy" />
+                </figure>
+                <h3 class="project-title"> Estimation des Émissions de CO₂ par Régression Linéaire</h3>
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="deep learning" onclick="showProjectDetails(3)">
+              <a href="javascript:void(0)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images_me/sentiment_anal_film.png" alt="Deep Learning" loading="lazy" />
+                </figure>
+                <h3 class="project-title"> Analyse de Sentiments des Critiques de Films avec RNN </h3>
+                <p class="project-category">Deep Learning</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="machine learning" onclick="showProjectDetails(13)">
+              <a href="javascript:void(0)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images_me/churn_pred.png" alt="machine learning" loading="lazy" />
+                </figure>
+                <h3 class="project-title"> Prédiction de Churn Client avec Régression Logistique</h3>
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+
+              
+            
+
+
+            <li id="project-detail-container" class="project-details" style="display:none;"></li>
+            
 
           </ul>
+          
+          
+          
+
 
         </section>
 
@@ -922,10 +950,10 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="certification" data-page="certification">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Certification</h2>
         </header>
 
         <section class="blog-posts">
@@ -936,135 +964,116 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images_me/databricks1.png" alt="Academy Accreditation - Generative AI Fundamentals" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
 
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Juin  2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Academy Accreditation - Generative AI Fundamentals</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Generative artificial intelligence (AI)
                   </p>
 
                 </div>
 
               </a>
             </li>
-
             <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images_me/dataiku.png" alt="Dataiku Core Designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
 
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Mai  2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Dataiku Core Designer</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    Compétent en préparation de données, visual recipes et création de dashboards collaboratifs avec Dataiku.
                   </p>
 
                 </div>
 
               </a>
             </li>
-
             <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./assets/images_me/oci_oracle.png" alt="Dataiku Core Designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
 
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Avril  2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">Oracle Cloud Infrastructure 2024  Generative AI Certified Professional</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Certifié en LLM avec OCI, maîtrisant RAG et LangChain pour créer et déployer des applications IA.
                   </p>
 
                 </div>
 
               </a>
             </li>
-
             <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="./assets/images_me/deeplearning_ai.png" alt="Dataiku Core Designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
 
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Mars  2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title">Generative AI with Large Language Models</h3>
 
                   <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    Solide compréhension des bases de l’IA générative, de ses cas d’usage en entreprise et des dernières avancées en matière de recherche.
                   </p>
 
                 </div>
 
               </a>
             </li>
-
             <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="./assets/images_me/IBM.png" alt="Dataiku Core Designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
 
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Fév  2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <h3 class="h3 blog-item-title"> IBM Data Science Specialization</h3>
 
                   <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Maîtrise des outils et techniques clés de data science : Python, SQL, visualisation, nettoyage de données et modélisation machine learning sur projets concrets.
                   </p>
 
                 </div>
@@ -1072,33 +1081,9 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
+            
 
           </ul>
 
@@ -1132,7 +1117,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formspree.io/f/manbbpbq" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
