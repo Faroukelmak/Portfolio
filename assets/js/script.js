@@ -1676,6 +1676,102 @@ const projectsDetailsContent = [
   </section>
 </div>
 `,
+  `<div style="max-width: 900px; margin: 60px auto; font-family: Arial, sans-serif; color: #333; line-height: 1.7; padding: 30px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.05); border-radius: 10px;">
+
+  <h2 style="font-size: 1.8em; color: #222; margin-bottom: 20px;">Prédiction des Prix de l’Or avec LSTM</h2>
+
+  <img src="./assets/images_me/predictiongold_lstm.png" alt="Prévision du prix de l'or avec LSTM"
+       style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px;" />
+
+  <section>
+    <h3 style="color: #278C5D;">Objectifs du Projet</h3>
+    <ul>
+      <li>Mettre en place un modèle de <strong>réseau de neurones LSTM</strong> pour prédire le prix de l’or.</li>
+      <li>Capturer les <strong>dépendances temporelles</strong> dans les séries financières.</li>
+      <li>Fournir des prévisions fiables pour soutenir les décisions d’investissement et de gestion des risques.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3 style="color: #278C5D;">Contexte</h3>
+    <p>
+      L’or, actif de référence sur les marchés financiers, est influencé par de nombreux facteurs économiques et géopolitiques. 
+      Anticiper ses variations est essentiel pour les investisseurs et les gestionnaires de risques.
+    </p>
+    <p>
+      Ce projet s’appuie sur une architecture <strong>LSTM (Long Short-Term Memory)</strong>, conçue pour traiter des séquences et capturer les tendances et cycles cachés dans les données temporelles.
+    </p>
+  </section>
+
+  <section>
+    <h3 style="color: #278C5D;">Pipeline du Projet</h3>
+    <ul>
+      <li><strong>Collecte</strong> des données historiques du prix de l’or.</li>
+      <li><strong>Prétraitement</strong> : normalisation des valeurs et fenêtrage en séquences temporelles.</li>
+      <li><strong>Modélisation</strong> : construction d’un réseau LSTM avec TensorFlow/Keras.</li>
+      <li><strong>Optimisation</strong> : ajustement des hyperparamètres (nombre de neurones, batch size, epochs, dropout).</li>
+      <li><strong>Évaluation</strong> avec <code>RMSE</code> et <code>MAPE</code> pour mesurer la précision prédictive.</li>
+      <li><strong>Visualisation</strong> des prédictions vs observations réelles.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3 style="color: #278C5D;">Cas d'Usage Réel</h3>
+    <p>
+      L’application de LSTM dans la prévision des prix de l’or permet :
+    </p>
+    <ul>
+      <li>D’améliorer la <strong>gestion des risques financiers</strong>.</li>
+      <li>De développer des <strong>stratégies de trading prédictif</strong>.</li>
+      <li>D’aider les analystes à anticiper les <strong>mouvements du marché</strong> avec plus de précision.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3 style="color: #278C5D;">Technologies et Outils</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+      <thead>
+        <tr style="background-color: #f0f0f0;">
+          <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Type</th>
+          <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Outils / Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Deep Learning</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">TensorFlow / Keras (LSTM)</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Manipulation de données</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">Pandas, NumPy</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Prétraitement</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">Normalisation, Séquençage temporel</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Évaluation</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">RMSE, MAPE</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Visualisation</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">Matplotlib, Seaborn</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h3 style="color: #278C5D; margin-top: 20px;">Conclusion</h3>
+    <p>
+      Ce projet démontre l’efficacité des <strong>réseaux LSTM</strong> pour la prévision de séries temporelles financières.
+      Les résultats obtenus montrent une capacité à capturer les dynamiques temporelles complexes et à fournir des prévisions précises du prix de l’or,
+      renforçant ainsi la valeur ajoutée pour les acteurs des marchés financiers en matière de <strong>trading et gestion des risques</strong>.
+    </p>
+  </section>
+</div>
+`
+  ,
   // contenu pour autres projets...
 ];
 
