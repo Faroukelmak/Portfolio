@@ -1879,8 +1879,7 @@ Le modèle entraîné est exposé en tant que service pour la **consommation en 
 </div>
 
 `
-  ,
-  // contenu pour autres projets...
+  // contenu pour autres projets... n'ajoute pas de virgule a la fin
 ];
 
 function showProjectDetails(index) {
