@@ -1799,11 +1799,7 @@ Ce projet est une démonstration complète de mes compétences en **NLP, Fine-Tu
 <p>
 Utilisation de **Pandas** et des outils **Hugging Face** pour le prétraitement et la structuration du dataset **SAMSum**.
 </p>
-<ul style="list-style-type: disc;">
-    <li><strong>Modèle :</strong> Fine-tuning du modèle <strong>PEGASUS</strong> (google/pegasus-cnn_dailymail), un modèle SOTA <strong>Seq2Seq</strong> de type Transformer.</li>
-    <li>**Prétraitement avancé :** Chargement, nettoyage initial des dialogues et **tokenisation** par le modèle pour générer les séquences d'entrée (input_ids, attention_mask) et les séquences cibles (target labels / résumés de référence).</li>
-    <li>**Rigueur en Data Split :** Mise en œuvre d'une **séparation** claire des jeux de données d'entraînement et de validation (*train / validation split*) afin de garantir une **évaluation rigoureuse** et non biaisée des performances du modèle.</li>
-</ul>
+
 <p style="margin-top: 15px;">
 </p>
 <h4 style="margin-top: 25px; color: #333;">2. Fine-Tuning de Modèle SOTA (Deep Learning)</h4>
