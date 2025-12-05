@@ -1839,6 +1839,8 @@ Le modèle entraîné est exposé en tant que service pour la **consommation en 
 <ul style="list-style-type: disc;">
     <li>**API Haute Performance :** Développement d'une **API REST** rapide avec **FastAPI** et le serveur **Uvicorn**, permettant de gérer efficacement les requêtes concurrentes.</li>
     <li>**Qualité de Code et Documentation :** Utilisation des **Schémas Pydantic** pour définir les structures de données (entrées/sorties), assurant une **validation des données** et une **documentation Swagger UI/OpenAPI** automatique.</li>
+    <li>**Déploiement Isolé :** **Dockerisation** complète du service (via Dockerfile) pour **isoler l'environnement** d'exécution, garantissant ainsi la **reproductibilité** et un **déploiement fiable** sur n'importe quel serveur. </li>
+
 </ul>
 <p style="margin-top: 15px;">
 </p>
