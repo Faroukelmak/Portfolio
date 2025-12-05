@@ -1773,20 +1773,109 @@ const projectsDetailsContent = [
 `
   ,
     `
-    <div style="max-width: 800px; margin: 60px auto; font-family: Arial, sans-serif; color: #278C5D; line-height: 1.7; padding: 30px; background-color: #f8f8f8; box-shadow: 0 0 15px rgba(0,0,0,0.1); border-radius: 12px;"> <section> <h2 style="font-size: 2em; color: #278C5D; margin-bottom: 25px; border-bottom: 3px solid #0077B6; padding-bottom: 10px;">Text Summarizer – Fine-Tuning PEGASUS et Pipeline MLOps Industriel 🧠</h2> <img src="./assets/images_me/textsummarizer_arch.png" alt="Architecture du pipeline MLOps pour le Text Summarizer" style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+<div style="max-width: 800px; margin: 60px auto; font-family: Arial, sans-serif; color: #333; line-height: 1.7; padding: 30px; background-color: #f8f8f8; box-shadow: 0 0 15px rgba(0,0,0,0.1); border-radius: 12px;">
+<section>
+<h2 style="font-size: 2em; color: #278C5D; margin-bottom: 25px; border-bottom: 3px solid #278C5D; padding-bottom: 10px;">Text Summarizer – Fine-Tuning PEGASUS et Pipeline MLOps Industriel 🧠</h2>
+<img src="./assets/images_me/textsummarizer_arch.png" alt="Architecture du pipeline MLOps pour le Text Summarizer" style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
 
-<section> <h3 style="color:#278C5D;">🎯 Introduction & Objectifs Techniques</h3> <p> Ce projet est une démonstration complète de mes compétences en NLP, Fine-Tuning et MLOps. Il consiste à développer un système de <strong>Synthèse de Texte Abstraite</strong> de pointe. </p> <ul> <li>Modèle : Fine-tuning du modèle PEGASUS (google/pegasus-cnn_dailymail), un modèle SOTA Seq2Seq de type Transformer.</li> <li>Tâche Spécifique : Spécialisation du modèle sur le dataset SAMSum pour le résumé de conversations naturelles (une tâche à haute valeur ajoutée).</li> <li>Objectif MLOps : Concevoir une pipeline MLOps complète, dockerisée, modulaire et déployée via une API FastAPI pour simuler un environnement de production.</li> </ul> </section>
+<section>
+<h3 style="color:#278C5D;">🎯 Introduction & Objectifs Techniques</h3>
+<p>
+Ce projet est une démonstration complète de mes compétences en **NLP, Fine-Tuning et MLOps**. Il consiste à développer un système de **Synthèse de Texte Abstraite** de pointe.
+</p>
+<ul>
+    <li>**Modèle :** Fine-tuning du modèle **PEGASUS** (`google/pegasus-cnn_dailymail`), un modèle SOTA **Seq2Seq** de type Transformer.</li>
+    <li>**Tâche Spécifique :** Spécialisation du modèle sur le dataset **SAMSum** pour le résumé de **conversations naturelles** (une tâche à haute valeur ajoutée).</li>
+    <li>**Objectif MLOps :** Concevoir une **pipeline MLOps complète, dockerisée, modulaire** et déployée via une API **FastAPI** pour simuler un environnement de production.</li>
+</ul>
+</section>
 
-<section> <h3 style="color: #278C5D; margin-top: 30px;">⚙️ Méthodologie : Déploiement de la Pipeline MLOps</h3>
+<section>
+<h3 style="color: #278C5D; margin-top: 30px;">⚙️ Méthodologie : Déploiement de la Pipeline MLOps</h3>
 <img src="./assets/images_me/textsummarizer_pipeline.png" alt="Interface de l'API FastAPI" style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
 
-<h4 style="margin-top: 15px; color: #333;">1. Ingestion et Préparation des Données (Data Engineering)</h4> <p> Utilisation de Pandas et des outils Hugging Face pour le prétraitement et la structuration du dataset SAMSum. </p> <ul style="list-style-type: disc;"> <li>Prétraitement avancé : Chargement, nettoyage initial des dialogues et tokenisation par le modèle pour générer les séquences d'entrée (input_ids, attention_mask) et les séquences cibles (target labels / résumés de référence).</li> <li>Rigueur en Data Split : Mise en œuvre d'une séparation claire des jeux de données d'entraînement et de validation (train / validation split) afin de garantir une évaluation rigoureuse et non biaisée des performances du modèle.</li> </ul> <p style="margin-top: 15px;"> </p>
-<h4 style="margin-top: 25px; color: #333;">2. Fine-Tuning de Modèle SOTA (Deep Learning)</h4> <p> Adaptation du modèle PEGASUS à la sémantique des dialogues. L'entraînement est géré par la librairie PyTorch. </p> <ul style="list-style-type: disc;"> <li>Framework de base : Utilisation de PyTorch (torch) comme backend de Deep Learning.</li> <li>Gestion de l'Entraînement : Le processus est orchestré via la classe Trainer de Hugging Face, permettant une gestion efficace de la boucle d'entraînement.</li> <li>Optimisation Avancée : Mise en œuvre de l'optimiseur AdamW et d'un scheduler linéaire pour optimiser la convergence du modèle.</li> <li>Suivi de Performance : Calcul des métriques ROUGE (ROUGE-1, ROUGE-2, ROUGE-L) à chaque checkpoint pour un suivi rigoureux des performances du modèle.</li> </ul> <p style="margin-top: 15px;"> </p>
+<h4 style="margin-top: 15px; color: #333;">1. Ingestion et Préparation des Données (Data Engineering)</h4>
+<p>
+Utilisation de **Pandas** et des outils **Hugging Face** pour le prétraitement et la structuration du dataset **SAMSum**.
+</p>
+<ul style="list-style-type: disc;">
+    <li>**Prétraitement avancé :** Chargement, nettoyage initial des dialogues et **tokenisation** par le modèle pour générer les séquences d'entrée (`input_ids`, `attention_mask`) et les séquences cibles (`target labels` / résumés de référence).</li>
+    <li>**Rigueur en Data Split :** Mise en œuvre d'une **séparation** claire des jeux de données d'entraînement et de validation (*train / validation split*) afin de garantir une **évaluation rigoureuse** et non biaisée des performances du modèle.</li>
+</ul>
+<p style="margin-top: 15px;">
+</p>
+<h4 style="margin-top: 25px; color: #333;">2. Fine-Tuning de Modèle SOTA (Deep Learning)</h4>
+<p>
+Adaptation du modèle **PEGASUS** à la sémantique des dialogues. L'entraînement est géré par la librairie **PyTorch**.
+</p>
+<ul style="list-style-type: disc;">
+    <li>**Framework de base :** Utilisation de **PyTorch** (`torch`) comme *backend* de *Deep Learning*.</li>
+    <li>**Gestion de l'Entraînement :** Le processus est orchestré via la classe **`Trainer`** de Hugging Face, permettant une gestion efficace de la boucle d'entraînement.</li>
+    <li>**Optimisation Avancée :** Mise en œuvre de l'optimiseur **AdamW** et d'un *scheduler linéaire* pour optimiser la convergence du modèle.</li>
+    <li>**Suivi de Performance :** Calcul des métriques **ROUGE** (ROUGE-1, ROUGE-2, ROUGE-L) à chaque *checkpoint* pour un **suivi rigoureux** des performances du modèle.</li>
+</ul>
+<p style="margin-top: 15px;">
+</p>
 
-<h4 style="margin-top: 25px; color: #333;">3. Pipeline MLOps et Évaluation des Performances</h4> <p> Structure modulaire garantissant la traçabilité et la reproductibilité complète du modèle final : </p> <ul style="list-style-type: disc;"> <li>Ingestion & Transformation : Les étapes initiales de préparation des données sont isolées pour assurer la pureté des données alimentant le pipeline.</li> <li>Training & Évaluation : Phase critique où l'entraînement est couplé au calcul des scores ROUGE en temps réel, permettant la sélection objective du meilleur modèle (best checkpoint).</li> <li>Prédiction Avancée : Implémentation du script de génération de résumé utilisant l'algorithme de Beam Search, garantissant des résumés plus cohérents et de meilleure qualité.</li> <li>Sauvegarde Stratégique : Le meilleur checkpoint du modèle est stocké de manière versionnée (implicite dans une structure MLOps) pour son déploiement ultérieur.</li> </ul> <p style="margin-top: 15px;"> </p>
+<h4 style="margin-top: 25px; color: #333;">3. Pipeline MLOps et Évaluation des Performances</h4>
+<p>
+Structure **modulaire** garantissant la **traçabilité** et la **reproductibilité** complète du modèle final :
+</p>
+<ul style="list-style-type: disc;">
+    <li>**Ingestion & Transformation :** Les étapes initiales de préparation des données sont isolées pour assurer la **pureté des données** alimentant le pipeline.</li>
+    <li>**Training & Évaluation :** Phase critique où l'entraînement est couplé au calcul des scores **ROUGE** en temps réel, permettant la **sélection objective** du meilleur modèle (*best checkpoint*).</li>
+    <li>**Prédiction Avancée :** Implémentation du script de génération de résumé utilisant l'algorithme de **Beam Search**, garantissant des résumés plus cohérents et de meilleure qualité.</li>
+    <li>**Sauvegarde Stratégique :** Le meilleur *checkpoint* du modèle est stocké de manière **versionnée** (implicite dans une structure MLOps) pour son déploiement ultérieur.</li>
+</ul>
+<p style="margin-top: 15px;">
+</p>
 
-<h4 style="margin-top: 25px; color: #333;">4. API de Déploiement et Conteneurisation </h4> <p> Le modèle entraîné est exposé en tant que service pour la consommation en temps réel, garantissant performance et portabilité. </p> <ul style="list-style-type: disc;"> <li>API Haute Performance : Développement d'une API REST rapide avec FastAPI et le serveur Uvicorn, permettant de gérer efficacement les requêtes concurrentes.</li> <li>Qualité de Code et Documentation : Utilisation des Schémas Pydantic pour définir les structures de données (entrées/sorties), assurant une validation des données et une documentation Swagger UI/OpenAPI automatique.</li> <li>Déploiement Isolé : Dockerisation complète du service (via Dockerfile) pour isoler l'environnement d'exécution, garantissant ainsi la reproductibilité et un déploiement fiable sur n'importe quel serveur. </li> </ul> <p style="margin-top: 15px;"> </p>
-<section> <h3 style="color: #278C5D; margin-top: 30px;">⭐ Outils et Technologies Clés Utilisés</h3> <table style="width: 100%; border-collapse: collapse; margin-top: 20px;"> <thead> <tr style="background-color: #E6F5FF;"> <th style="text-align: left; padding: 12px; border: 1px solid #ddd; color: #333;">Catégorie</th> <th style="text-align: left; padding: 12px; border: 1px solid #ddd; color: #333;">Outils / Technologies</th> </tr> </thead> <tbody> <tr> <td style="padding: 12px; border: 1px solid #ddd;">Deep Learning & NLP</td> <td style="padding: 12px; border: 1px solid #ddd;">PyTorch (torch), PEGASUS, Hugging Face Transformers</td> </tr> <tr> <td style="padding: 12px; border: 1px solid #ddd;">Évaluation & Métriques</td> <td style="padding: 12px; border: 1px solid #ddd;">Hugging Face evaluate pour ROUGE-1, ROUGE-2, ROUGE-L</td> </tr> <tr> <td style="padding: 12px; border: 1px solid #ddd;">Déploiement API & Infra</td> <td style="padding: 12px; border: 1px solid #ddd;">FastAPI, Uvicorn, Docker (conteneurisation)</td> </tr> <tr> <td style="padding: 12px; border: 1px solid #ddd;">Data Engineering</td> <td style="padding: 12px; border: 1px solid #ddd;">Pandas (prétraitement des données)</td> </tr> <tr> <td style="padding: 12px; border: 1px solid #ddd;">Architecture</td> <td style="padding: 12px; border: 1px solid #ddd;">Architecture Modulaire (Python), Pipeline MLOps</td> </tr> </tbody> </table> </section> </section> </div>
+<h4 style="margin-top: 25px; color: #333;">4. API de Déploiement et Conteneurisation 🐳</h4>
+<p>
+Le modèle entraîné est exposé en tant que service pour la **consommation en temps réel**, garantissant performance et portabilité.
+</p>
+<ul style="list-style-type: disc;">
+    <li>**API Haute Performance :** Développement d'une **API REST** rapide avec **FastAPI** et le serveur **Uvicorn**, permettant de gérer efficacement les requêtes concurrentes.</li>
+    <li>**Qualité de Code et Documentation :** Utilisation des **Schémas Pydantic** pour définir les structures de données (entrées/sorties), assurant une **validation des données** et une **documentation Swagger UI/OpenAPI** automatique.</li>
+    <li>**Déploiement Isolé :** **Dockerisation** complète du service (via `Dockerfile`) pour **isoler l'environnement** d'exécution, garantissant ainsi la **reproductibilité** et un **déploiement fiable** sur n'importe quel serveur.</li>
+</ul>
+<p style="margin-top: 15px;">
+</p>
+<section>
+<h3 style="color: #278C5D; margin-top: 30px;">⭐ Outils et Technologies Clés Utilisés</h3>
+<table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+<thead>
+<tr style="background-color: #E6F5FF;">
+<th style="text-align: left; padding: 12px; border: 1px solid #ddd; color: #333;">Catégorie</th>
+<th style="text-align: left; padding: 12px; border: 1px solid #ddd; color: #333;">Outils / Technologies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px; border: 1px solid #ddd;">Deep Learning & NLP</td>
+<td style="padding: 12px; border: 1px solid #ddd;">**PyTorch** (torch), **PEGASUS**, **Hugging Face Transformers**</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid #ddd;">Évaluation & Métriques</td>
+<td style="padding: 12px; border: 1px solid #ddd;">**Hugging Face evaluate** pour **ROUGE-1, ROUGE-2, ROUGE-L**</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid #ddd;">Déploiement API & Infra</td>
+<td style="padding: 12px; border: 1px solid #ddd;">**FastAPI**, **Uvicorn**, **Docker** (conteneurisation)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid #ddd;">Data Engineering</td>
+<td style="padding: 12px; border: 1px solid #ddd;">**Pandas** (prétraitement des données)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid #ddd;">Architecture</td>
+<td style="padding: 12px; border: 1px solid #ddd;">Architecture Modulaire (Python), **Pipeline MLOps**</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</div>
 `
   ,
   // contenu pour autres projets...
