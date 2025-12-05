@@ -1771,7 +1771,7 @@ const projectsDetailsContent = [
   </section>
 </div>
 ` ,
-    `
+`
 <div style="max-width: 800px; margin: 60px auto; font-family: Arial, sans-serif; color: #333; line-height: 1.7; padding: 30px; background-color: #f8f8f8; box-shadow: 0 0 15px rgba(0,0,0,0.1); border-radius: 12px;">
 <section>
 <h2 style="font-size: 2em; color: #278C5D; margin-bottom: 25px; border-bottom: 3px solid #278C5D; padding-bottom: 10px;">Text Summarizer – Fine-Tuning PEGASUS et Pipeline MLOps Industriel 🧠</h2>
@@ -1878,7 +1878,7 @@ Le modèle entraîné est exposé en tant que service pour la **consommation en 
 </section>
 </section>
 </div>
-`
+`,
   // contenu pour autres projets... n'ajoute pas de virgule a la fin
 ];
 
