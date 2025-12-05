@@ -1877,6 +1877,7 @@ Le modèle entraîné est exposé en tant que service pour la **consommation en 
 </section>
 </section>
 </div>
+
 `
   ,
   // contenu pour autres projets...
