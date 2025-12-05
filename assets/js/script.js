@@ -1800,7 +1800,8 @@ Ce projet est une démonstration complète de mes compétences en **NLP, Fine-Tu
 Utilisation de **Pandas** et des outils **Hugging Face** pour le prétraitement et la structuration du dataset **SAMSum**.
 </p>
 <ul style="list-style-type: disc;">
-    <li>**Prétraitement avancé :** Chargement, nettoyage initial des dialogues et **tokenisation** par le modèle pour générer les séquences d'entrée (`input_ids`, `attention_mask`) et les séquences cibles (`target labels` / résumés de référence).</li>
+    <li><strong>Modèle :</strong> Fine-tuning du modèle <strong>PEGASUS</strong> (google/pegasus-cnn_dailymail), un modèle SOTA <strong>Seq2Seq</strong> de type Transformer.</li>
+    <li>**Prétraitement avancé :** Chargement, nettoyage initial des dialogues et **tokenisation** par le modèle pour générer les séquences d'entrée ('input_ids', 'attention_mask') et les séquences cibles ('target labels' / résumés de référence).</li>
     <li>**Rigueur en Data Split :** Mise en œuvre d'une **séparation** claire des jeux de données d'entraînement et de validation (*train / validation split*) afin de garantir une **évaluation rigoureuse** et non biaisée des performances du modèle.</li>
 </ul>
 <p style="margin-top: 15px;">
@@ -1810,8 +1811,8 @@ Utilisation de **Pandas** et des outils **Hugging Face** pour le prétraitement 
 Adaptation du modèle **PEGASUS** à la sémantique des dialogues. L'entraînement est géré par la librairie **PyTorch**.
 </p>
 <ul style="list-style-type: disc;">
-    <li>**Framework de base :** Utilisation de **PyTorch** (`torch`) comme *backend* de *Deep Learning*.</li>
-    <li>**Gestion de l'Entraînement :** Le processus est orchestré via la classe **`Trainer`** de Hugging Face, permettant une gestion efficace de la boucle d'entraînement.</li>
+    <li>**Framework de base :** Utilisation de **PyTorch** ('torch') comme *backend* de *Deep Learning*.</li>
+    <li>**Gestion de l'Entraînement :** Le processus est orchestré via la classe **Trainer** de Hugging Face, permettant une gestion efficace de la boucle d'entraînement.</li>
     <li>**Optimisation Avancée :** Mise en œuvre de l'optimiseur **AdamW** et d'un *scheduler linéaire* pour optimiser la convergence du modèle.</li>
     <li>**Suivi de Performance :** Calcul des métriques **ROUGE** (ROUGE-1, ROUGE-2, ROUGE-L) à chaque *checkpoint* pour un **suivi rigoureux** des performances du modèle.</li>
 </ul>
