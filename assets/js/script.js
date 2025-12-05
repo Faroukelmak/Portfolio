@@ -1772,6 +1772,84 @@ const projectsDetailsContent = [
 </div>
 `
   ,
+    `<div style="max-width: 800px; margin: 60px auto; font-family: Arial, sans-serif; color: #333; line-height: 1.7; padding: 30px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.05); border-radius: 10px;"> <section> <h2 style="font-size: 1.8em; color: #222; margin-bottom: 20px;">Text Summarizer – Fine-Tuning PEGASUS & Pipeline MLOps Complet</h2> <!-- Image placeholder -->
+
+<img src="./assets/images_me/textsummarizer.png" alt="Text Summarizer Pegasus" style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px;" />
+
+<!-- Introduction --> <section> <h3 style="color: #278C5D;">Introduction</h3> <p> Ce projet consiste à développer un système complet de <strong>résumé automatique de textes</strong> basé sur <strong>PEGASUS</strong>, l’un des modèles SOTA en summarization. J’ai finetuné le modèle <strong>google/pegasus-cnn_dailymail</strong> sur le dataset <strong>SAMSum</strong>, spécialisé dans les résumés de conversations courtes et naturelles. </p> <p> Au-delà du fine-tuning, j’ai conçu une <strong>pipeline MLOps industrielle</strong> intégrant ingestion, preprocessing, entraînement, évaluation, sauvegarde du modèle et déploiement via une API <strong>FastAPI</strong>. L’objectif était d’obtenir une solution robuste, dockerisée, modulaire et prête pour la production. </p> </section> <!-- Méthodologie --> <section> <h3 style="color: #278C5D; margin-top: 5px;">Méthodologie</h3>
+<h4 style="margin-top: 10px;">1. Ingestion et Préparation des Données</h4>
+<p>
+  La première étape a consisté à récupérer et structurer le dataset <strong>SAMSum</strong>, qui contient des dialogues annotés
+  avec leurs résumés de référence.
+</p>
+<ul>
+  <li>Chargement et nettoyage des dialogues.</li>
+  <li>Mise au format compatible PEGASUS (input_ids, attention_mask, target_ids).</li>
+  <li>Split train / validation automatique.</li>
+</ul>
+
+<h4 style="margin-top: 20px;">2. Fine-Tuning de PEGASUS</h4>
+<p>
+  Le modèle <strong>google/pegasus-cnn_dailymail</strong> a été adapté pour résumer des conversations, un style différent des
+  articles journalistiques sur lesquels il avait été initialement pré-entraîné.
+</p>
+
+<ul>
+  <li>Entraînement avec Hugging Face Trainer.</li>
+  <li>Utilisation d’un scheduler linéaire et AdamW.</li>
+  <li>Gradient clipping, mixed precision (fp16) pour accélérer.</li>
+  <li>Métriques : ROUGE-1, ROUGE-2, ROUGE-L.</li>
+</ul>
+
+<h4 style="margin-top: 20px;">3. Pipeline MLOps Complet</h4>
+<p>J’ai structuré tout le cycle de vie du projet sous forme d’un pipeline clair et modulaire :</p>
+
+<ul>
+  <li><strong>Ingestion</strong> : récupération/chargement des données.</li>
+  <li><strong>Transformation</strong> : tokenisation, préparation des batchs.</li>
+  <li><strong>Training</strong> : fine-tuning + tracking des métriques.</li>
+  <li><strong>Évaluation</strong> : calcul ROUGE et comparaison des checkpoints.</li>
+  <li><strong>Prédiction</strong> : script de génération avec beam search.</li>
+  <li><strong>Sauvegarde</strong> : stockage du meilleur modèle.</li>
+</ul>
+
+<h4 style="margin-top: 20px;">4. API de Déploiement avec FastAPI</h4>
+<p>
+  Une API <strong>FastAPI</strong> a été développée pour exposer le modèle de façon performante et scalable :
+</p>
+<ul>
+  <li>Endpoint <code>/summarize</code> acceptant du texte brut.</li>
+  <li>Réponse rapide grâce au chargement lazy du modèle.</li>
+  <li>Schemas Pydantic pour des entrées/sorties propres.</li>
+  <li>Gestion d’erreurs et logs structurés.</li>
+</ul>
+
+<img src="./assets/images_me/textsummarizer_api.png" alt="Pipeline MLOps Pegasus" 
+   style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px;" />
+
+<h4 style="margin-top: 20px;">5. Dockerisation et Production</h4>
+<p>
+  Le service complet est encapsulé dans un conteneur Docker pour garantir la reproductibilité et la simplicité du
+  déploiement.
+</p>
+<ul>
+  <li>Image légère basée sur <code>python:3.10-slim</code>.</li>
+  <li>Installation optimisée de Transformers et PyTorch.</li>
+  <li>Exposition du service FastAPI via Uvicorn.</li>
+</ul>
+
+<h4 style="margin-top: 20px;">6. Architecture Modulaire</h4>
+<p>
+  L’architecture du projet a été pensée pour être propre, évolutive et orientée production :
+</p>
+<img src="./assets/images_me/textsummarizer_arch.png" alt="Architecture MLOps" style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px;" />
+<p>
+  Chaque bloc (ingestion, transformation, entraînement…) est isolé, testable, et facilement remplaçable.
+</p>
+</section> <!-- Outils & Technologies --> <section> <h3 style="color: #278C5D; margin-top: 5px;">Outils et Technologies Utilisés</h3> <table style="width: 100%; border-collapse: collapse; margin-top: 20px;"> <thead> <tr style="background-color: #f0f0f0;"> <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Catégorie</th> <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Outils / Technologies</th> </tr> </thead> <tbody> <tr> <td style="padding: 10px; border: 1px solid #ddd;">NLP & Modèles</td> <td style="padding: 10px; border: 1px solid #ddd;">PEGASUS, Hugging Face Transformers</td> </tr> <tr> <td style="padding: 10px; border: 1px solid #ddd;">Pipeline MLOps</td> <td style="padding: 10px; border: 1px solid #ddd;">Pipeline modulaire maison, Trainer HF</td> </tr> <tr> <td style="padding: 10px; border: 1px solid #ddd;">Déploiement</td> <td style="padding: 10px; border: 1px solid #ddd;">FastAPI, Uvicorn, Docker</td> </tr> <tr> <td style="padding: 10px; border: 1px solid #ddd;">Tracking Experiments</td> <td style="padding: 10px; border: 1px solid #ddd;">ROUGE Score (HF Evaluate), logs custom</td> </tr> <tr> <td style="padding: 10px; border: 1px solid #ddd;">Data Processing</td> <td style="padding: 10px; border: 1px solid #ddd;">Pandas, NumPy</td> </tr> </tbody> </table> </section> </section> </div>
+
+`
+  ,
   // contenu pour autres projets...
 ];
 
