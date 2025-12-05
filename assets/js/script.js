@@ -1792,6 +1792,7 @@ Ce projet est une démonstration complète de mes compétences en **NLP, Fine-Tu
 
 <section>
 <h3 style="color: #278C5D; margin-top: 30px;">⚙️ Méthodologie : Déploiement de la Pipeline MLOps</h3>
+
 <img src="./assets/images_me/textsummarizer_pipeline.png" alt="Interface de l'API FastAPI" style="display: block; margin: 0 auto 1.5rem auto; max-width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
 
 <h4 style="margin-top: 15px; color: #333;">1. Ingestion et Préparation des Données (Data Engineering)</h4>
@@ -1837,7 +1838,7 @@ Le modèle entraîné est exposé en tant que service pour la **consommation en 
 <ul style="list-style-type: disc;">
     <li>**API Haute Performance :** Développement d'une **API REST** rapide avec **FastAPI** et le serveur **Uvicorn**, permettant de gérer efficacement les requêtes concurrentes.</li>
     <li>**Qualité de Code et Documentation :** Utilisation des **Schémas Pydantic** pour définir les structures de données (entrées/sorties), assurant une **validation des données** et une **documentation Swagger UI/OpenAPI** automatique.</li>
-    <li>**Déploiement Isolé :** **Dockerisation** complète du service (via `Dockerfile`) pour **isoler l'environnement** d'exécution, garantissant ainsi la **reproductibilité** et un **déploiement fiable** sur n'importe quel serveur.</li>
+    <li>**Déploiement Isolé :** **Dockerisation** complète du service (via `Dockerfile`) pour **isoler l'environnement** d'exécution, garantissant ainsi la **reproductibilité** et un **déploiement fiable** sur n'importe quel serveur. </li>
 </ul>
 <p style="margin-top: 15px;">
 </p>
