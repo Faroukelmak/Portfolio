@@ -1784,7 +1784,7 @@ const projectsDetailsContent = [
 Ce projet est une démonstration complète de mes compétences en **NLP, Fine-Tuning et MLOps**. Il consiste à développer un système de **Synthèse de Texte Abstraite** de pointe.
 </p>
 <ul>
-    <li><strong>Modèle :</strong> Fine-tuning du modèle <strong>PEGASUS</strong> (<code>google/pegasus-cnn_dailymail</code>), un modèle SOTA <strong>Seq2Seq</strong> de type Transformer.</li>
+    <li><strong>Modèle :</strong> Fine-tuning du modèle <strong>PEGASUS</strong>'pegasus-cnn_dailymail' de google, un modèle SOTA <strong>Seq2Seq</strong> de type Transformer.</li>
     <li>**Tâche Spécifique :** Spécialisation du modèle sur le dataset **SAMSum** pour le résumé de **conversations naturelles** (une tâche à haute valeur ajoutée).</li>
     <li>**Objectif MLOps :** Concevoir une **pipeline MLOps complète, dockerisée, modulaire** et déployée via une API **FastAPI** pour simuler un environnement de production.</li>
 </ul>
